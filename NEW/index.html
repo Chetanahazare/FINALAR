@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Shopping</title>
+
+    <link rel="icon" type="image/icon" href="images/favicon1.ico">
+    
+
+    <!-- Code for font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Code for font awesome cdn-->
+
+     <!-- Code for css linking file-->
+     <link rel="stylesheet" href="css/style.css">
+      <!-- Code for css linking file-->
+
+      <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+      <script src="https://cdn.jsdelivr.net/npm/ar.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-<your-integrity-value>" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+    
+    
+
+     <!-- Code for header section-->
+      <header class="header">
+          <a href="#" class="logo"><i class="fa fa-shopping-bag" aria-hidden="true"></i>AR Shopping</a>
+          
+      
+      <nav class="navbar">
+          <a href="#home">home</a>
+          <a href="#features">features</a>
+          <a href="#products">products</a>
+          <a href="#categories">categories</a>
+          <a href="#review">review</a>
+      </nav>
+
+      <div class="icons">
+          <div class="fa fa-bars" id="menu-btn"></div>
+          <div class="fa fa-search" id="search-btn"></div>
+          <div class="fa fa-shopping-cart" id="cart-btn"><span>*</span></div>
+          <div class="fa fa-user" id="login-btn"></div>
+      </div>
+      
+      <form  class="search-form">
+          <input type="search" id="search-box" placeholder="search here">
+          <label for="search-box" class="fa fa-search"></label>
+      </form>
+      
+     
+
+     <div class="shopping-cart" id="cart-btn">
+         <div class="box">
+        <div class="title">My Cart</div><hr/>
+        <div id="title"></div>
+        
+    </div>
+     </div>
+
+    
+
+
+<form action="#" class="login-form">
+    <h3>Login Now</h3>
+    <input type="email" placeholder="Email" class="box">
+    <input type="password" placeholder="Password" class="box">
+
+    <p>Forgot your Password <a href="#">Click Here</a></p>
+    <p>Create New Account <a href="#">Create Now</a></p>
+
+    <input type="submit" value="login" class="btn">
+</form>
+
+
+
+
+</header>
+<!--header section-->
+
+
+<!--banner section-->
+<section class="home" id="home">
+    <div class="content">
+        <h3>Welcome to <span>AR Shopping</span><br>
+            Your Ultimate Shopping Destination!<br>
+             Discover Style, Quality, and Convenience</h3>
+             <p>Explore a World of Trendy Fashion, Home Essentials & 
+                 Furniture<br>
+                 Exclusive Offers:<br>
+                 Limited-time Discounts<br>
+                 Flash Sales<br>
+                 New Arrivals </p>
+                 <a href="#" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<!--banner section-->
+
+
+<!--feature section-->
+        <section class="features" id="features">
+            <h1 class="heading">Our <span>Features</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/feature1.jpg">
+                    <h3>Quality Assurance</h3>
+                    <p> Handpicked products for the best quality.</p>
+
+                    <a href="#" class="btn">read more</a>
+                </div>
+                <div class="box">
+                    <img src="images/feature2.jpg">
+                    <h3>Free Delivery</h3>
+                    <p>  Swift and reliable delivery to your doorstep</p>
+
+                    <a href="#" class="btn">read more</a>
+                </div>
+                <div class="box">
+                    <img src="images/feature3.png">
+                    <h3>Secure Shopping</h3>
+                    <p>  Shop with confidence using our secure payment gateways.</p>
+
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            
+        </section>
+
+<!--feature section-->
+
+<!--products section-->
+<section class="products" id="products">
+    <h1 class="heading">Our <span>Products</span></h1>
+    <div class=" swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box" id="item1">
+                <img src="images/table2.jpg" >
+                <h1 class="title">Table</h1>
+                <div>
+                    <label>SIZE:</label>
+                    <select>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        
+                    </select>
+                </div>
+                <div class="price"> $12.99-$15.99</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <button onclick="addToCart(item1)" class="addcart" id="addtocart">Add To Cart</button>
+                <button class="camera" id="camera1"><i class="fa fa-camera"></i></button>
+                
+            </div>
+
+            <div class="swiper-slide box" id="item2">
+                <img src="images/watch.jpg" >
+                <h1 class="title">Wrist Watch Waterproof</h1>
+                <div>
+                    <label>SIZE:</label>
+                    <select>
+                        <option>34mm-36mm</option>
+                        <option>38mm-42mm</option>
+                        <option>44mm-46mm</option>
+                        
+                    </select>
+                </div>
+                <div class="price"> $13.99-$15.99</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <button onclick="addToCart(item2)" class="addcart" id="addtocart">Add To Cart</button>
+                <button class="camera" id="camera"><i class="fa fa-camera"></i></button>
+            </div>
+
+            <div class="swiper-slide box" id="item3">
+                <img src="images/laptopbag.jpg" >
+                <h1 class="title">Laptop bag</h1>
+                <div>
+                    <label>SIZE:</label>
+                    <select>
+                        <option>10l-16l</option>
+                        <option>20l-25l</option>
+                        <option>30l</option>
+                        
+                    </select>
+                </div>
+                <div class="price"> $10.99-$15.99</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <button onclick="addToCart(item3)"class="addcart" id="addtocart">Add To Cart</button>
+                <button class="camera" id="camera"><i class="fa fa-camera"></i></button>
+            </div>
+
+            <div class="swiper-slide box" id="item4">
+                <img src="images/leatherbag.jpg" >
+                <h1 class="title">Leather Bag</h1>
+                <div>
+                    <label>SIZE:</label>
+                    <select>
+                        <option>18cm</option>
+                        <option>19cm</option>
+                        <option>20cm</option>
+                        
+                    </select>
+                </div>
+                <div class="price"> $12.99-$18.99</div>
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+               <button onclick="addToCart(item4)" class="addcart" id="addtocart">Add To Cart</button>
+                <button class="camera" id="camera"><i class="fa fa-camera"></i></button>
+            </div>
+           </div>
+    </div>
+    
+     <div class="swiper product-slider" id="item5">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="images/bluetoothhp.jpeg" >
+                <h1  class="title" >Bluetooth Headphones</h1>
+                <div>
+                    <label>SIZE:</label>
+                    <select>
+                        <option> 13.5-15.4 mm</option>
+                        <option>8.8-12.5 mm</option>
+                        <option>30-53 mm</option>
+                        
+                    </select>
+                </div>
+                <div class="price"> $12.99-$15.99</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <button onclick="addToCart(item5)" class="addcart" id="addtocart">Add To Cart</button>
+                <button class="camera" id="camera"><i class="fa fa-camera"></i></button>
+            </div>
+
+            <div class="swiper-slide box" id="item6">
+                <img src="images/duffiebag.jpg" >
+                <h1  class="title">Astroo Duffei Bag</h1>
+                <div>
+                    <label>SIZE:</label>
+                    <select>
+                        <option>10l-16l</option>
+                        <option>20l-25l</option>
+                        <option>30l</option>
+                        
+                    </select>
+                </div>
+                <div class="price"> $13.99-$25.99</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <button onclick="addToCart(item6)" class="addcart" id="addtocart">Add To Cart</button>
+                <button class="camera" id="camera"><i class="fa fa-camera"></i></button>
+            </div>
+
+            <div class="swiper-slide box" id="item7">
+                <img src="images/sandals.jpg" >
+                <h1  class="title">Lady Sandals</h1>
+                <div>
+                    <label>SIZE:</label>
+                    <select>
+                        <option>30</option>
+                        <option>32</option>
+                        <option>34</option>
+                        <option>36</option>
+                        <option>40</option>
+                    </select>
+                </div>
+                <div class="price"> $13.99-$15.99</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <button onclick="addToCart(item7)" class="addcart" id="addtocart">Add To Cart</button>
+                <button class="camera" id="camera"><i class="fa fa-camera"></i></button>
+            </div>
+
+            <div class="swiper-slide box" id="item8">
+                <img src="images/shoe.jpg" >
+                <h1  class="title">Metro Shoe</h1>
+                <div>
+                    <label>SIZE:</label>
+                    <select>
+                        <option>34</option>
+                        <option>36</option>
+                        <option>38</option>
+                        <option>40</option>
+                        <option>42</option>
+                    </select>
+                </div>
+                <div class="price"> $7.99-$10.99</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    </div>
+                    <button onclick="addToCart(item8)" class="addcart" id="addtocart">Add To Cart</button>
+                    <button class="camera" id="camera"><i class="fa fa-camera"></i></button>
+            </div>
+
+
+        </div>
+    </div>
+
+   
+
+    
+
+
+</section>
+
+
+<!--products section-->
+
+
+<!--categories section-->
+<section class="categories" id="categories">
+    <h1 class="heading">Product <span>Categories</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/table.jpg" >
+            <h3>Canteen Table</h3>
+            <p>Upto 45% Off</p>
+            <button class="addcart" id="addtocart">Shop Now</button>
+            <button class="camera" id="camera"><i class="fa fa-camera"></i></button>
+        </div>
+
+        <div class="box">
+            <img src="images/dining.jpg" >
+            <h3>Dining Table</h3>
+            <p>Upto 65% Off</p>
+            <button class="addcart" id="addtocart">Shop Now</button>
+                <button class="camera" id="camera"><i class="fa fa-camera"></i></button>
+        </div>
+
+        <div class="box">
+            <img src="images/oven.jpg" >
+            <h3>Microwave Oven</h3>
+            <p>Upto 35% Off</p>
+            <button class="addcart" id="addtocart">Shop Now</button>
+                <button class="camera" id="camera"><i class="fa fa-camera"></i></button>
+        </div>
+
+        <div class="box">
+            <img src="images/chair.jpg" >
+            <h3>Rocking Chair</h3>
+            <p>Upto 55% Off</p>
+            <button class="addcart" id="addtocart">Shop Now</button>
+                <button class="camera" id="camera"><i class="fa fa-camera"></i></button>
+        </div>
+   
+    </div>
+</section>
+
+
+<!--categories section-->
+
+<!--Review section-->
+
+<section class="review" id="review">
+    <h1 class="heading">Customer's <span>Review</span></h1>
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <h3>Experience</h3>
+                <p>Share your experience with us</p>
+                <input type="text" placeholder="Feedback" class="exp">
+                <input type="submit" value="Share" class="btn">
+            </div>
+            <div class="swiper-slide box">
+                <img src="images/pic-1.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3>Alex Deo</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="images/pic-2.jpeg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3>chenyin Deo</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="images/pic3.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3>Yufie Deo</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="images/pic-4.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3>Jiawa Deo</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!--Review section-->
+
+
+
+
+
+<!--footer section-->
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>AR <i class="fa fa-shopping-bag"></i></h3>
+            <p>Feel Free to Follow Us On Our Social Media Handlers</p>
+
+            <div class="share">
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <h3>Contact Info </h3>
+            <a href="#" class="links"><i class="fa fa-phone"></i> +91 9876543210</a>
+            <a href="#" class="links"><i class="fa fa-whatsapp"></i> +91 9854343210</a>
+            <a href="#" class="links"><i class="fa fa-envelope"></i> ar123@gmail.com</a>
+            <a href="#" class="links"><i class="fa fa-map-marker"></i> Hyderabad,Telangana</a>
+            
+        </div>
+
+        <div class="box">
+            <h3> Quick Links </h3>
+            <a href="#" class="links"><i class="fa fa-arrow-right"></i>Home</a>
+            <a href="#" class="links"><i class="fa fa-arrow-right"></i>Features</a>
+            <a href="#" class="links"><i class="fa fa-arrow-right"></i>Products</a>
+            <a href="#" class="links"><i class="fa fa-arrow-right"></i>Categories</a>
+            <a href="#" class="links"><i class="fa fa-arrow-right"></i>Review</a>
+            
+        </div>
+
+        <div class="box">
+            <h3> Newsletter </h3>
+            <p>Subscribe For Latest Updates</p>
+            <input type="email" placeholder="Your Email" class="email">
+            <input type="submit" value="Subscribe" class="btn">
+           
+        </div>
+
+
+    </div>
+
+
+
+
+<div class="credit">
+    Created by <span>Tech AR Team </span>| All Rights Reserved
+</div>
+
+
+
+
+
+</section>
+
+
+
+<!--footer section-->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
